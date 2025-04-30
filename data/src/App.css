@@ -1,0 +1,186 @@
+@import 'tailwindcss';
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+::-webkit-scrollbar-track {
+	background: rgba(255, 255, 255, 0);
+}
+::-webkit-scrollbar-thumb {
+	background: rgba(126, 127, 140, 0.4);
+	border-radius: 5px;
+	margin: 4px 0px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+pre {
+	font-family: hafs;
+}
+
+@font-face {
+	font-family: 'font-1';
+	src: url('./assets/fonts/AmiriQuran.ttf');
+	font-style: normal;
+}
+@font-face {
+	font-family: 'font-2';
+	src: url('./assets/fonts/divehi.ttf');
+	font-style: normal;
+}
+@font-face {
+	font-family: 'font-3';
+	src: url('./assets/fonts/hafs.ttf');
+	font-style: normal;
+}
+@font-face {
+	font-family: 'font-4';
+	src: url('./assets/fonts/kalpurush.ttf');
+	font-style: normal;
+}
+@font-face {
+	font-family: 'font-5';
+	src: url('./assets/fonts/kitab.ttf');
+	font-style: normal;
+}
+@font-face {
+	font-family: 'font-6';
+	src: url('./assets/fonts/noorehira.ttf');
+	font-style: normal;
+}
+@font-face {
+	font-family: 'font-7';
+	src: url('./assets/fonts/noorehuda.ttf');
+	font-style: normal;
+}
+@font-face {
+	font-family: 'font-8';
+	src: url('./assets/fonts/qalam.ttf');
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'UrduTypeSetting';
+	src: url('./assets/fonts/UrduTypeSetting.ttf');
+	font-style: normal;
+}
+
+@keyframes stepIn {
+	0% {
+		opacity: 0;
+		transform: translateY(100px);
+		-webkit-transform: translateY(100px);
+		-moz-transform: translateY(100px);
+		-ms-transform: translateY(100px);
+		-o-transform: translateY(100px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+		-webkit-transform: translateY(0px);
+		-moz-transform: translateY(0px);
+		-ms-transform: translateY(0px);
+		-o-transform: translateY(0px);
+	}
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+	}
+}
+
+@keyframes OptionIn {
+	0% {
+		transform-origin: top;
+		transform: scaleY(75%);
+		-webkit-transform: scaleY(75%);
+		-moz-transform: scaleY(75%);
+		-ms-transform: scaleY(75%);
+		-o-transform: scaleY(75%);
+	}
+	100% {
+		transform-origin: top;
+		transform: scaleY(100%);
+		-webkit-transform: scaleY(100%);
+		-moz-transform: scaleY(100%);
+		-ms-transform: scaleY(100%);
+		-o-transform: scaleY(100%);
+	}
+}
+
+@keyframes ButtonUp {
+	0% {
+		opacity: 0;
+		transform: translateY(100%);
+		-webkit-transform: translateY(100%);
+		-moz-transform: translateY(100%);
+		-ms-transform: translateY(100%);
+		-o-transform: translateY(100%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+		-webkit-transform: translateY(0%);
+		-moz-transform: translateY(0%);
+		-ms-transform: translateY(0%);
+		-o-transform: translateY(0%);
+}
+}
+@keyframes ButtonIn {
+	0% {
+		transform: scale(10%);
+		-webkit-transform: scale(10%);
+		-moz-transform: scale(10%);
+		-ms-transform: scale(10%);
+		-o-transform: scale(10%);
+}
+	100% {
+		transform: scale(100%);
+		-webkit-transform: scale(100%);
+		-moz-transform: scale(100%);
+		-ms-transform: scale(100%);
+		-o-transform: scale(100%);
+}
+}
+@keyframes Bouncer {
+	0% {
+		transform: scale(100%);
+		-webkit-transform: scale(100%);
+		-moz-transform: scale(100%);
+		-ms-transform: scale(100%);
+		-o-transform: scale(100%);
+	}
+	50% {
+		transform: scale(110%);
+		-webkit-transform: scale(110%);
+		-moz-transform: scale(110%);
+		-ms-transform: scale(110%);
+		-o-transform: scale(110%);
+	}
+	100% {
+		transform: scale(100%);
+		-webkit-transform: scale(100%);
+		-moz-transform: scale(100%);
+		-ms-transform: scale(100%);
+		-o-transform: scale(100%);
+	}
+}

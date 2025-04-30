@@ -1,0 +1,14 @@
+services:
+  verses:
+    build: .
+    container_name: verses
+    image: web_app:tar
+    ports:
+      - target: 7417
+        published: 7417
+    volumes:
+      - "${PWD}/data:/home/data"
+    env_file:
+      - .env
+    restart:
+      on-failure
