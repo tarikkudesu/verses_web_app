@@ -62,4 +62,4 @@ export function isSurahName(name: string): boolean {
 	return false;
 }
 
-export const VERSES_API: string = 'https://kxszaalpexnqalykvfrb.supabase.co/storage/v1/object/public/verses/';
+export const VERSES_API: string = '/quran/';

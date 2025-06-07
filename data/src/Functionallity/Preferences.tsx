@@ -31,7 +31,6 @@ export class Preferences {
 			this.hoverColor = 'rgb(30, 41, 57)';
 			this.activeColor = 'rgb(30, 41, 57)';
 		} else if (theme === Theme.Night) {
-			// this.AccentColor = 'rgb(0, 211, 243)';
 			this.AccentColor = 'rgb(0, 184, 219)';
 			this.bgMainColor = 'rgb(16, 24, 40)';
 			this.bgDimmedColor = 'rgb(30, 41, 57)';
@@ -103,4 +102,4 @@ export function usePreferencesLocalStorageState(initialState: Preferences) {
 	return { preLocalStorage, setPreLocalStorage };
 }
 
-export const PreferencesContext = createContext(new Preferences(Theme.Night));
+export const PreferencesContext = createContext(new Preferences(Theme.Light));

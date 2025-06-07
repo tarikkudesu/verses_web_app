@@ -7,6 +7,7 @@ import { langReducer, Language, LanguageContext, useLanguageLocalStorageState } 
 import { User, UserContext, userReducer, useUserLocalStorageState } from './Functionallity/User';
 import { Dispatch, DispatchContext } from './Functionallity/Dispatch';
 import { Theme } from './Functionallity/interfaces';
+import { Frame } from './Components/Frames';
 
 import Bookmarks from './Components/Bookmarks';
 import Settings from './Components/Settings';
@@ -17,10 +18,9 @@ import Surah from './Components/Surah';
 import Hizb from './Components/Hizb';
 import Info from './Components/Info';
 import Read from './Components/Read';
-import { Frame } from './Components/Frames';
 
 const App: React.FC<unknown> = () => {
-	const { preLocalStorage, setPreLocalStorage } = usePreferencesLocalStorageState(new Preferences(Theme.Night));
+	const { preLocalStorage, setPreLocalStorage } = usePreferencesLocalStorageState(new Preferences(Theme.Light));
 	const { langLocalStorage, setLangLocalStorage } = useLanguageLocalStorageState(new Language());
 	const { userLocalStorage, setUserLocalStorage } = useUserLocalStorageState(new User());
 	const [pre, preDispatch] = useReducer(preReducer, preLocalStorage);
